@@ -1,0 +1,282 @@
+<html>
+<style>
+body{
+  height: 100%;
+  font-family: sans-serif;
+  margin: 0px;
+  min-width: 700px;
+  background-color: #0f0f0f;
+  color: #fafafa;
+}
+#header{
+  overflow: auto;
+}
+#nav-bar{
+  background: #0f0f0f;
+  width: 100%;
+  height: 100px;
+  position:fixed;
+  z-index: 3;
+  border-bottom: 1px solid #fafafa;
+  
+}
+#header-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+ }
+
+#title{
+  margin: -30px 0px 0px 120px;
+  font-size: 20px;
+  font-style: bold;
+  font-weight: 800;
+  font-family: Roboto Condensed;
+  color: #FF8D1B  ;
+}
+
+#nav-list li{
+  display: inline-block;
+  position: relative;
+  top: -40px;
+  float:right;
+  padding-right: 20px;
+  
+  
+}
+.nav-link{
+  text-decoration:none;
+  color: #FF8D1B;
+  font-weight: 550;
+}
+
+#form{
+  margin:150px 0px 0px 500px;
+}
+#email{
+  width:250px;
+  height:20px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+#date{
+  width:250px;
+  height:20px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+#submit{
+  height:30px;
+  width:80px;
+  margin:10px 0px 0px 70px;
+  border-radius: 5px;
+  color: white;
+  background:#FF8D1B;
+  font-weight: 550;
+}
+
+input[type="date"]:before {
+  color: grey;
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+}
+
+input::-webkit-datetime-edit{ color: transparent; }
+input:focus::-webkit-datetime-edit{ color: #000; } 
+
+#email-label{
+  margin-left: 12px;
+  font-weight: 550;
+  font-family: verdana;
+  color: #FF8D1B;
+}
+
+#Features{
+
+  }
+
+.materials-img{
+  width:100px;
+  height:90px;
+  border-radius: 50%;
+  margin-left: 150px;
+}
+.materials-p{
+  font-weight:800;
+  margin: -70px 0px 10px 300px;
+  font-size: 18px;
+  color:#FF8D1B;
+}
+.materials-p1{
+  margin: 2px 180px 50px 300px;
+  text-align: justify;
+  font-family: helvetica;
+}
+
+#video{
+  margin: 10px 0px 50px 500px;
+}
+
+.box{
+  border: 1px solid #fafafa;;
+  background:url(http://www.freepressjournal.in/wp-content/uploads/2017/10/Laksmi-puja.jpg) ;
+  height:260px;
+  width:340px;
+  margin: 0px 10px 50px 90px;
+  
+  min-width:320px;
+  
+}
+#price{
+  display: flex;
+  
+}
+.heading{
+  background: #e6ede7;
+  font-weight:750;
+  margin: 0px;
+  text-align: center;
+  height: 35px;
+  color: #091c0e;
+  font-family: helvetica;
+  
+}
+
+.para{
+  
+  font-weight:750;
+  margin: 10px;
+  text-align: center;
+  height: 30px;
+  color: #7fff00;
+  font-family:verdana;
+  
+}
+li{
+  line-height: 25px;
+  font-family: Georgia;
+  margin-left: 90px;
+  font-weight: 800;
+  color:#00ff2a;
+}
+
+.button{
+  height:30px;
+  width:80px;
+  margin:10px 0px 0px 140px;
+  border-radius: 5px;
+  color: #01000c;
+  background:#f9d157;
+  font-weight: 650;
+}
+#footer li{
+  display:inline;
+  color:black;
+  font-weight: 500;
+  float:right;
+  margin:10px;
+ 
+ 
+}
+#footer{
+  background: lightgrey;
+  width:1100px;
+  height:65px;
+  diplay:flex;
+  margin-left:160px;
+  
+}
+@media (max-width:400px){
+  li{
+    color: blue;
+  }
+}
+</style>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <body>
+    <header id="header">
+      <nav id="nav-bar"> 
+          <img id="header-img"        src="https://pbs.twimg.com/profile_images/857934960354897920/IE7IIS0o_400x400.jpg">
+        <p id="title"> Online Pandit Ji </p>
+      <ul id="nav-list" style="list-style:none;">
+           <li>  <a href="#price" class="nav-link">Pricing </a> </li> 
+           <li>  <a href="#online" class="nav-link">Online Pooja </a></li>
+           <li>  <a href="#Features" class="nav-link">Features</a></li>
+      </ul>
+      </nav>
+      
+    </header>
+    <div id="form-div">
+    <form action="https://www.freecodecamp.com/email-submit" id="form"> 
+      <label for="email" id="email-label"> Book Pandit through mail</label><br>
+      <input type="email" id="email" placeholder="Email" name="email"><br>
+      <input type="date" id="date" placeholder="Date"><br>
+      <input type="submit" id="submit">
+      </div>
+    </form>
+    <div id="Features">
+      <div id="materials"> <img src="https://www.salebhai.com/content/images/thumbs/0026145.png" alt="Pooja materials" class="materials-img">
+        <p class="materials-p"> Poojan Samagri</p>
+        <p class="materials-p1">We deliver complete pooja material at your doar step. Now no need to worry about poojan samagri, separate package for each kind of pooja is available.</p>
+      </div>
+      <div id="service"> <img src="https://i.pinimg.com/564x/7f/ca/0a/7fca0ae53f28ab02228c354e48d768b5.jpg" alt="service" id="service-img" class="materials-img">
+        <p class="materials-p">Ontime service</p>
+        <p class="materials-p1">We understand the value of time and believe that each task should be completed within it speculated time. We guarantee ontime Pooja without any delay.</p>
+      </div>
+      <div id="quality"> <img src="https://image.winudf.com/v2/image/Y29tLmNzb2Z0LnB1amF2aWRoaV9pY29uXzBfOGVmNTAwNGE/icon.png?w=170&fakeurl=1&type=.png" alt="quality" id="quality-img" class="materials-img">
+        <p class="materials-p">Quality assuarance</p>
+        <p class="materials-p1">We have verified pandits with deep knowledge of each Pooja. We believe that pooja should be done with proper rituals by experts in that fields.</p>
+      </div>
+    </div>
+    <div id="online"> 
+   
+<iframe id="video" width="454" height="240" src="https://www.youtube.com/embed/g71NBj2qOeU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div id="price">
+      <div id="laxmi" class="box"> <h4 class="heading">Laxmi Pooja </h4>
+        <p class="para"> Rs. 2100 </p>
+        <ul style="list-style:none;"> 
+          
+          <li> Premium</li>
+          <li> Gold</li>
+          <li> Bronze</li>
+          <li>Duration: 80 mins </li>
+        </ul>
+        <button type="submit" class="button">Select</button>
+      </div>
+      <div id="grih" class="box"><h4 class="heading"> Grih Pravesh </h4> 
+        <p class="para">Rs. 3100 </p> 
+        <ul style="list-style:none;"> 
+        
+          <li> Premium</li>
+          <li> Gold</li>
+          <li> Bronze</li>
+          <li>Duration: 180 mins </li>
+        
+        </ul>
+        <button type="submit" class="button">Select</button>
+      </div>
+      <div id="satyanarayan" class="box"><h4 class="heading">Satyanarayan Pooja </h4>
+         <p class="para"> Rs. 1100 </p>
+        <ul style="list-style:none;">
+       
+          <li> Premium</li>
+          <li> Gold</li>
+          <li> Bronze</li>
+          <li>Duration: 45 mins </li>
+        </ul>
+        <button type="submit" class="button">Select</button>
+      </div>
+    </div>
+    <footer id="footer"> 
+      <ul style="list-style:none;"> <li></li>
+        <li>Contact</li>
+        <li>Term</li>
+        <li>Privacy</li>
+      </ul> <br>
+      <p style=" color:black; font-size: 15px; text-align:right; position:relative; left:220px; top: 14px; bottom: 4px;">Copyright 2016,Onlinepanditji.com</p>
+    
+  </body>
+</html>
